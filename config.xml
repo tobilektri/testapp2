@@ -54,6 +54,8 @@
     <plugin name="cordova-plugin-camera" />
     <plugin name="cordova-plugin-media-capture" />
     <plugin name="cordova-plugin-battery-status" />
+    <plugin name="com.phonegap.plugins.barcodescanner" />
+    <plugin name="cordova-plugin-media" />
 
     
     
@@ -64,7 +66,6 @@
     <plugin name="cordova-plugin-geolocation" />
     <plugin name="cordova-plugin-globalization" />
     <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-vibration" />
@@ -72,7 +73,6 @@
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
-        <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 
     <!-- Define app icon for each platform. -->
