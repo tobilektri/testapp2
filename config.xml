@@ -16,7 +16,16 @@
     <author href="http://it-meindl.de" email="info@it-meindl.de">
         IT-Meindl
     </author>
-    <splash src="/img/splashscreen/favicon_app.png" />
+    
+    
+    <!--
+
+
+
+    +++++++++++Selbstgebautes zeug++++++++++
+    
+    -->
+    <splash src="/img/splashscreen/favicon_app.png" width="200" height="200" />
 
     <!--
         If you do not want any permissions to be added to your app, add the
