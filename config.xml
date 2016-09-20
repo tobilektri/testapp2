@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "de.it-meindl.wawaapp1"
-        version   = "0.1.1">
+        version   = "0.1.12">
 
     <name>WachApp UFG</name>
 
