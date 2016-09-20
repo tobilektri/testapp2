@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "de.it-meindl.wawaapp1"
-        version   = "0.1.2">
+        version   = "0.1.26">
 
     <name>WachApp UFG</name>
 
@@ -25,7 +25,6 @@
     +++++++++++Selbstgebautes zeug++++++++++
     
     -->
-    <!--<splash src="/img/splashscreen/favicon_app.png" width="200" height="200" />-->
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -108,6 +107,18 @@
 -->
     <!-- Define app splash screen for each platform. -->
 
+    <splash src="img/splashscreen/android/drawable-ldpi/background.9.png" platform="android" qualifier="ldpi" />
+    <splash src="img/splashscreen/android/drawable-mdpi/background.9.png" platform="android" qualifier="mdpi" />
+    <splash src="img/splashscreen/android/drawable-hdpi/background.9.png" platform="android" qualifier="hdpi" />
+    <splash src="img/splashscreen/android/drawable-xhdpi/background.9.png" platform="android" qualifier="xhdpi" />
+    <!--<splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />-->
+    <!--<splash src="portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />-->
+    <!--<splash src="landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />-->
+    <splash src="img/splashscreen/android/drawable-xxhdpi/background.9.png" platform="android" qualifier="xxhdpi" />
+    <splash src="img/splashscreen/android/drawable-xxxhdpi/background.9.png" platform="android" qualifier="xxxhdpi" />
+<!--<splash src="/img/splashscreen/favicon_app.png" width="200" height="200" />-->
+
+<!--Outdated
 
     <gap:splash src="img/splashscreen/android/drawable-ldpi/background.9.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="img/splashscreen/android/drawable-mdpi/background.9.png"       gap:platform="android" gap:qualifier="port-mdpi" />
@@ -115,7 +126,7 @@
     <gap:splash src="img/splashscreen/android/drawable-xhdpi/background.9.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="img/splashscreen/android/drawable-xxhdpi/background.9.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="img/splashscreen/android/drawable-xxxhdpi/background.9.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
-
+-->
 <!-- Enfernt am 20.09.16
 
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
