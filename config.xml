@@ -4,12 +4,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "de.it-meindl.wawaapp1"
-        version   = "0.0.7">
+        version   = "0.1.0">
 
-    <name>WachApp</name>
+    <name>WachApp UFG</name>
 
     <description>
-        Eine Sample-App für die wasserwacht-app
+        Eine Test-App für die Wachplan App der Wasserwacht Unterföhring von Tobias Meindl.
+        Nur für interne Mitglieder. Passwort benötigt. Anfragen bei info@wachplan.info.
     </description>
 
     <author href="http://it-meindl.de" email="info@it-meindl.de">
