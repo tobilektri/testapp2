@@ -116,7 +116,7 @@
     <!--<splash src="landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />-->
     <splash src="img/splashscreen/android/drawable-xxhdpi/background.9.png" platform="android" qualifier="xxhdpi" />
     <splash src="img/splashscreen/android/drawable-xxxhdpi/background.9.png" platform="android" qualifier="xxxhdpi" />
-<!--<splash src="/img/splashscreen/favicon_app.png" width="200" height="200" />-->
+    <splash src="/img/splashscreen/favicon_app.png" width="200" height="200" />-->
 
 <!--Outdated
 
