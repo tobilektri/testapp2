@@ -82,7 +82,13 @@
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    
+    
+    <!-- Irgendwas tut es, was genau weiß ich nicht
     <plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
+    -->
+    
+    
     <!--<plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" sourche="nmp" />
     <plugin name="cordova-plugin-fcm" source="npm" />
     <gap:plugin name="pushbots-cordova-plugin" source="npm" />-->
