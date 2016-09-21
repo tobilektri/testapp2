@@ -169,7 +169,7 @@
     <access origin="https://maxcdn.bootstrapcdn.com" subdomains="true" />
     <access origin="http://kenny-2.ddns.net" subdomains="true" />
     <access origin="https://www.google-analytics.com" subdomains="true" />
-    <access origin="https://pushpad.xyz/p/1859" subdomains="true" />
+    <!-- <access origin="https://pushpad.xyz/p/1859" subdomains="true" />-->
     
     
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
