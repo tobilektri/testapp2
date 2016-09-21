@@ -83,7 +83,7 @@
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
-    <gap:plugin name="pushbots-cordova-plugin" source="npm" />
+    <!--<gap:plugin name="pushbots-cordova-plugin" source="npm" />-->
         <!-- Doku: https://github.com/phonegap-build/PushPlugin/blob/a172e19/README.md-->
     <!--
     -->
