@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "de.it-meindl.wawaapp1"
+        id        = "de.itmeindl.wawaapp1"
         version   = "0.1.4">
 
     <name>WachApp UFG</name>
