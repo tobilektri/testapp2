@@ -5,6 +5,7 @@
     <title></title>
     <META NAME="keywords" CONTENT="">
     <META NAME="description" CONTENT="">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
     <!-- <script src="checkconnection.js" type="text/javascript"></script>-->
     <script type="text/javascript" charset="utf-8">
 
@@ -187,8 +188,34 @@
       
       
       -->
+      <script>
+      if (navigator.onLine) {
+    	  $("#ifonline").append("Online");
+    	} else {
+    	   $("#ifonline").append("offline");
+
+    	}
+
+    	var isOffline = 'onLine' in navigator && !navigator.onLine;
+
+    	if ( isOffline ) {
+    	    $("#ifonline2").append("Status: offline");
+    	}
+    	else {
+    	    $("#ifonline2").append("online");
+    	}
+
+    	function checkConnection(){
+            var networkState = navigator.connection.type;
+            if(Connection.NONE==networkState)
+                return "<p>No connection</p>";
+}
+
+    	
+    	checkConnection();
+      </script>
     
-    <h4>Version: 0.2.03</h4>
+    <h4>Version: 0.2.05</h4>
     <script>
     document.write("</br>Mäh!</br>");
     </script>
