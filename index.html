@@ -163,10 +163,15 @@
 
     // Wait for device API libraries to load
     //
+    document.write("</br>Schritt1!</br>");
+
     document.addEventListener("deviceready", onDeviceReady, false);
+    document.write("</br>Schritt2!</br>");
 
 
     function checkConnection() {
+    	document.write("</br>Schritt3!</br>");
+
         var networkState = navigator.connection.type;
 
         var states = {};
