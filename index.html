@@ -6,45 +6,33 @@
     <META NAME="keywords" CONTENT="">
     <META NAME="description" CONTENT="">
     <!-- <script src="checkconnection.js" type="text/javascript"></script>-->
-    <script>
-    $( document ).bind( 'deviceready', function() {
-    	connection();
-    	$( '#btnCheck' ).bind( 'touchstart', connection );
-    } );
-    var internet;
-    function connection()
-    {
-    	switch(navigator.network.connection.type)
-    	{
-    	case Connection.UNKNOWN:
-    		internet=false;
-    		break;
-    	case Connection.NONE:
-    		internet=false;
-    		break;
-    	case Connection.Cell_2G:
-    		internet=false;
-    		break;
-    	default:
-    		internet=true;
+    <script type="text/javascript" charset="utf-8">
 
-    	}
-    	
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        checkConnection();
     }
-    if(internet){
 
-    // internet is connected
-        document.write('<meta http-equiv="refresh" content="0; URL=http://kenny-2.ddns.net/app/">');
-    	document.write("</head><body>");
-    	document.write("U are connected");
-    
-    
-    }else{
+        function checkConnection() {
+            var networkState = navigator.connection.type;
 
-    	document.write("</head><body>");
-    	document.write("U are NOT connected");
-    	// internet is not connected
-    }
+            var states = {};
+            states[Connection.UNKNOWN]  = 'Unknown connection';
+            states[Connection.ETHERNET] = 'Ethernet connection';
+            states[Connection.WIFI]     = 'WiFi connection';
+            states[Connection.CELL_2G]  = 'Cell 2G connection';
+            states[Connection.CELL_3G]  = 'Cell 3G connection';
+            states[Connection.CELL_4G]  = 'Cell 4G connection';
+            states[Connection.CELL]     = 'Cell generic connection';
+            states[Connection.NONE]     = 'No network connection';
+
+            alert('Connection type: ' + states[networkState]);
+        }
 
     </script>
     
@@ -199,47 +187,8 @@
       
       
       -->
-     <script type="text/javascript">
-     $( document ).bind( 'deviceready', function() {
-     	connection();
-     	$( '#btnCheck' ).bind( 'touchstart', connection );
-     } );
-     var internet;
-     function connection()
-     {
-     	switch(navigator.network.connection.type)
-     	{
-     	case Connection.UNKNOWN:
-     		internet=false;
-     		break;
-     	case Connection.NONE:
-     		internet=false;
-     		break;
-     	case Connection.Cell_2G:
-     		internet=false;
-     		break;
-     	default:
-     		internet=true;
-
-     	}
-     	
-     }
-
-     if(internet){
-
-    	    // internet is connected
-    	    document.write("Start der App erfolgt.");
-    	    
-    	    
-    	    }else{
-
-    	    // internet is not connected
-    	    
-    	    document.write("<h1>Du bist nicht mit dem Internet verbunden!</br>");
-    	    }
-	</script>
     
-    <h4>Version: 0.2.02</h4>
+    <h4>Version: 0.2.03</h4>
     <script>
     document.write("</br>Mäh!</br>");
     </script>
