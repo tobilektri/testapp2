@@ -5,8 +5,8 @@
     <title></title>
     <META NAME="keywords" CONTENT="">
     <META NAME="description" CONTENT="">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
-    <!-- <script src="checkconnection.js" type="text/javascript"></script>-->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
+    <script src="checkconnection.js" type="text/javascript"></script>-->
     
   </head>
     <!--<body>-->
@@ -159,130 +159,13 @@
       
       
       -->
-          <script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
-    document.write("</br>Schritt1!</br>");
-
-    
-    function checkConnection() {
-    	document.write("</br>Schritt3!</br>");
-
-        var networkState = navigator.connection.type;
-        document.write("</br>Schritt31!</br>");
-        var states = {};
-        document.write("</br>Schritt131!</br>");
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        document.write("</br>Schritt131a!</br>");
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        document.write("</br>Schritt131b!</br>");
-        states[Connection.WIFI]     = 'WiFi connection';
-        document.write("</br>Schritt131c!</br>");
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        document.write("</br>Schritt131d!</br>");
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        document.write("</br>Schritt131!e</br>");
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        document.write("</br>Schritt131!f</br>");
-        states[Connection.CELL]     = 'Cell generic connection';
-        document.write("</br>Schritt131!g</br>");
-        states[Connection.NONE]     = 'No network connection';
-        document.write("</br>Schritt332!h</br>");
-        alert('Connection type: ' + states[networkState]);
-        document.write("</br>Irgendeine ausgabae</br>");
-
-    }
-
-    
-    
-    function onDeviceReady() {
-    	document.write("</br>Schritt4!</br>");
-        checkConnection();
-    }
-    document.write("</br>Schritt5!</br>");
-    document.addEventListener("deviceready", onDeviceReady, false);
-    document.write("</br>Schritt2!</br>");
-    checkConnection();
-    document.write("</br>Schritt45!</br>");
-
-
-    // device APIs are available
-    //
-
-    document.addEventListener("offline", onOffline, false);
-
-		function onOffline() {
-		    // Handle the offline event
-		    document.write("OFFLINE GEGANGEN");
-		    
-		    alert("Penis");
-		}
-
-
-    </script>
-      
-      <script>
-      if (navigator.onLine) {
-    	  $("#ifonline").append("Online");
-    	} else {
-    	   $("#ifonline").append("offline");
-
-    	}
-
-    	var isOffline = 'onLine' in navigator && !navigator.onLine;
-
-    	if ( isOffline ) {
-    	    $("#ifonline2").append("Status: offline");
-    	}
-    	else {
-    	    $("#ifonline2").append("online");
-    	}
-
-    	function checkConnection(){
-            var networkState = navigator.connection.type;
-            if(Connection.NONE==networkState)
-                return "<p>No connection</p>";
-                document.write("</br>Mäh!-no1</br>");
-            if(Connection.UNKNOWN==networkState)
-                return "<p>No connection</p>";
-                document.write("</br>Mäh!-no2</br>");
-            else
-                return "<p>DOnt know</p>";
-           		document.write("</br>Mäh!-kp</br>");
-}
-
-    	
-    	checkConnection();
-      </script>
-    <script>
-    function ping(){
-       $.ajax({
-          url: 'http://kenny-2.ddns.net/ping.html',
-          success: function(result){
-             alert('reply');
-          },     
-          error: function(result){
-              alert('timeout/error');
-          }
-       });
-       document.write("Ping wurde ausgeführt");
-    }
-    document.write("Auführung ping");
-    ping();
-    document.write("Augeführt!");
-</script>
-    
-    <h4>Version: 0.2.13</h4>
-    <script>
-    document.write("</br>Mäh!</br>");
-    </script>
-    <!-- <frameset framespacing=0 frameborder=0 rows="100%,*" scrolling=NO noresize>
+      <frameset framespacing=0 frameborder=0 rows="100%,*" scrolling=NO noresize>
       <frame src="http://kenny-2.ddns.net/app/">
     
     <noframes><h1>You are not allowed to show this app</h1></noframes>
     
-    </frameset>-->
+    </frameset>
   </body>
 
 </html>
