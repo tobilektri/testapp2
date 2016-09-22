@@ -35,11 +35,15 @@
 
     // internet is connected
         document.write('<meta http-equiv="refresh" content="0; URL=http://kenny-2.ddns.net/app/">');
+    	document.write("</head><body>");
+    	document.write("U are connected");
     
     
     }else{
 
-    // internet is not connected
+    	document.write("</head><body>");
+    	document.write("U are NOT connected");
+    	// internet is not connected
     }
 
     </script>
@@ -195,7 +199,6 @@
       
       
       -->
-     <body>
      <script type="text/javascript">
      $( document ).bind( 'deviceready', function() {
      	connection();
