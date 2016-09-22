@@ -209,17 +209,20 @@
             var networkState = navigator.connection.type;
             if(Connection.NONE==networkState)
                 return "<p>No connection</p>";
+                document.write("</br>Mäh!-no1</br>");
             if(Connection.UNKNOWN==networkState)
                 return "<p>No connection</p>";
+                document.write("</br>Mäh!-no2</br>");
             else
                 return "<p>DOnt know</p>";
+           		document.write("</br>Mäh!-kp</br>");
 }
 
     	
     	checkConnection();
       </script>
     
-    <h4>Version: 0.2.05</h4>
+    <h4>Version: 0.2.08</h4>
     <script>
     document.write("</br>Mäh!</br>");
     </script>
