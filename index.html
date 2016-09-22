@@ -170,7 +170,7 @@
     	document.write("</br>Schritt3!</br>");
 
         var networkState = navigator.connection.type;
-
+        document.write("</br>Schritt31!</br>");
         var states = {};
         states[Connection.UNKNOWN]  = 'Unknown connection';
         states[Connection.ETHERNET] = 'Ethernet connection';
@@ -180,7 +180,7 @@
         states[Connection.CELL_4G]  = 'Cell 4G connection';
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
-
+        document.write("</br>Schritt332!</br>");
         alert('Connection type: ' + states[networkState]);
         document.write("</br>Irgendeine ausgabae</br>");
 
