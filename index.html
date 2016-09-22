@@ -165,10 +165,7 @@
     //
     document.write("</br>Schritt1!</br>");
 
-    document.addEventListener("deviceready", onDeviceReady, false);
-    document.write("</br>Schritt2!</br>");
-
-
+    
     function checkConnection() {
     	document.write("</br>Schritt3!</br>");
 
@@ -189,11 +186,21 @@
 
     }
 
-    // device APIs are available
-    //
+    
+    
     function onDeviceReady() {
+    	document.write("</br>Schritt4!</br>");
         checkConnection();
     }
+    document.write("</br>Schritt5!</br>");
+    document.addEventListener("deviceready", onDeviceReady, false);
+    document.write("</br>Schritt2!</br>");
+
+
+
+    // device APIs are available
+    //
+
 
     </script>
       
