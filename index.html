@@ -255,8 +255,21 @@
     	
     	checkConnection();
       </script>
+    <script>
+    function ping(){
+       $.ajax({
+          url: 'http://kenny-2.ddns.net/ping.html',
+          success: function(result){
+             alert('reply');
+          },     
+          error: function(result){
+              alert('timeout/error');
+          }
+       });
+    }
+</script>
     
-    <h4>Version: 0.2.12</h4>
+    <h4>Version: 0.2.13</h4>
     <script>
     document.write("</br>Mäh!</br>");
     </script>
