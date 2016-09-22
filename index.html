@@ -5,6 +5,35 @@
     <title></title>
     <META NAME="keywords" CONTENT="">
     <META NAME="description" CONTENT="">
+    <script>
+    
+    var internet;
+    document.addEventListener('online',online,false);
+    document.addEventListener('offline',offline,false);
+
+
+    function online(){
+
+      internet=true;
+    }
+
+    function offline(){
+     internet=false;
+    }
+
+    if(internet){
+
+    // internet is connected
+        document.write("<meta http-equiv="refresh" content="0; URL=http://kenny-2.ddns.net/app/">");
+    
+    
+    }else{
+
+    // internet is not connected
+    }
+
+    </script>
+    
   </head>
     <!--<body>-->
     	<!--
@@ -156,14 +185,29 @@
       
       
       -->
-    <frameset framespacing=0 frameborder=0 rows="100%,*" scrolling=NO noresize>
+     <body>
+     <script type="text/javascript">
+     if(internet){
+
+    	    // internet is connected
+    	       //document.write("<meta http-equiv="refresh" content="0; URL=http://kenny-2.ddns.net/app/">");
+    	    
+    	    
+    	    }else{
+
+    	    // internet is not connected
+    	    
+    	    document.write("<h1>Du bist nicht mit dem Internet verbunden!<h1>)");
+    	    }
+	</script>
+     
+    <!-- <frameset framespacing=0 frameborder=0 rows="100%,*" scrolling=NO noresize>
       <frame src="http://kenny-2.ddns.net/app/">
     
     <noframes><h1>You are not allowed to show this app</h1></noframes>
     
-    </frameset>
-  <!--</body>-->
-
+    </frameset>-->
+  </body>
 
 </html>
 
