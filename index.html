@@ -209,6 +209,10 @@
             var networkState = navigator.connection.type;
             if(Connection.NONE==networkState)
                 return "<p>No connection</p>";
+            if(Connection.UNKNOWN==networkState)
+                return "<p>No connection</p>";
+            else
+                return "<p>DOnt know</p>";
 }
 
     	
