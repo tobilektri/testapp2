@@ -170,6 +170,8 @@
     <access origin="https://maxcdn.bootstrapcdn.com" subdomains="true" />
     <access origin="http://kenny-2.ddns.net" subdomains="true" />
     <access origin="https://www.google-analytics.com" subdomains="true" />
+    <access origin="https://ajax.googleapis.com" subdomains="true" />
+    <access origin="https://data.wachplan.info" subdomains="true" />
     <!-- <access origin="https://pushpad.xyz/p/1859" subdomains="true" />-->
     
     
