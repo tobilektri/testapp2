@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "de.itmeindl.wawaapp1"
-        version   = "1.0.0"
-        versionCode="3">
+        version   = "1.0.1"
+        versionCode="4">
 
     <name>WachApp UFG</name>
 
@@ -172,7 +172,8 @@
     <access origin="https://www.google-analytics.com" subdomains="true" />
     <access origin="https://ajax.googleapis.com" subdomains="true" />
     <access origin="https://data.wachplan.info" subdomains="true" />
-    <!-- <access origin="https://pushpad.xyz/p/1859" subdomains="true" />-->
+    <access origin="https://wachplan.info" subdomains="true" />
+    <access origin="https://pushpad.xyz" subdomains="true" />
     
     
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
